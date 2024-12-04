@@ -1,0 +1,20 @@
+{
+    "name": "Advent of Code 2024 (TypeScript)",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash",
+      "editor.formatOnSave": true,
+      "editor.tabSize": 2,
+      "typescript.tsdk": "node_modules/typescript/lib"
+    },
+    "extensions": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "ms-vscode.vscode-typescript-next",
+      "ms-azuretools.vscode-docker"
+    ],
+    "postCreateCommand": "npm install",
+    "forwardPorts": [3000],
+    "remoteUser": "vscode"
+  }
