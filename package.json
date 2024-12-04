@@ -4,8 +4,8 @@
   "description": "Advent of Code 2024 challenges",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "start": "ts-node src/index.ts",
@@ -29,6 +29,7 @@
     "typescript": "^5.0.0",
     "typescript-eslint": "^8.17.0"
   },
+  "type": "module",
   "lint-staged": {
     "*.ts": [
       "eslint --fix",
